@@ -1,0 +1,67 @@
+.active {
+    background-color: orange;
+  }
+  .padding-10 {
+    padding: 10%;
+  }
+  .padding-5 {
+    padding: 5%;
+  }
+  .padding-2 {
+    padding: 2%;
+  }
+  .padding-0 {
+    padding: 0%;
+  }
+  .centered {
+    width: 100%;
+    margin: auto;
+  }
+  .padding-lr-20 {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  .padding-lr-10 {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .padding-lr-5 {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .padding-top-0-5 {
+    padding-top: O;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+  }
+
+
+ #trait {
+    border-top: 0.5em solid #111; 
+    width : 100%;
+    border-radius: 0.5em;
+    
+}
+
+.center {
+  display: inline-block;
+
+}
+input.btn-primary {
+  margin-top: 15px;
+}
+.margin-top {
+  margin-top: 4%;
+}
+.round {
+  border-radius:1em;
+}
+ul {
+	list-style-type:none;
+}
+li a {
+  color:black;
+  font-size: 1em;
+  
+}
