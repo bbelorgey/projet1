@@ -1,8 +1,8 @@
 body{
     background-color: #000007;
 }
-.vignette em {
-    text-align:right;
+cards {
+    border: 5px solid #0000B7;
 }
 .band-title{
 
