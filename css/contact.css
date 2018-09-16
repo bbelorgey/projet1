@@ -1,0 +1,177 @@
+.bg-black {
+  background: #191718;
+  color: #CCCCCC;
+}
+
+.btn-outline-yellow {
+  border: 2px solid #A2905E;
+  border-radius: 0;
+  background: transparent;
+  color: #A2905E;
+}
+
+.btn-outline-yellow:hover {
+  background: #A2905E;
+  color: #f5f5f5;
+}
+
+.btn-outline-yellow:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(162, 144, 94, 0.25);
+}
+
+header .navbar {
+  box-shadow: 0 0 10px #222;
+}
+
+header .navbar .nav-item {
+  padding: 0 0.25em;
+}
+
+header .navbar .nav-item a {
+  color: #f5f5f5;
+}
+
+header .navbar .nav-item a:hover {
+  color: #CCCCCC;
+}
+
+header .navbar .nav-item a.active {
+  border-bottom: 2px solid #A2905E;
+}
+
+header .navbar a.navbar-brand {
+  color: #A2905E;
+  font-size: 30px;
+}
+
+main#contact-page {
+  background: url(https://images.unsplash.com/photo-1453090927415-5f45085b65c0?ixlib=rb-0.3.5&s=c26c459d9fd2cabe14c93636bc6de370&auto=format&fit=crop&w=1931&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+main#contact-page .contact-sec {
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 10px #000;
+  color: #CCCCCC;
+  padding: 50px;
+}
+
+main#contact-page .contact-sec form h3 {
+  color: #A2905E;
+}
+
+main#contact-page .contact-sec form .form-row {
+  margin-top: 30px;
+}
+
+main#contact-page .contact-sec form .form-row .form-group {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+main#contact-page .contact-sec form .form-row .form-group label {
+  position: absolute;
+  left: 15px;
+  margin-bottom: 0;
+  cursor: text;
+  transition: all .2s ease-out;
+}
+
+main#contact-page .contact-sec form .form-row .form-group .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  margin: auto;
+  background: #A2905E;
+  transition: all .2s ease-out;
+}
+
+main#contact-page .contact-sec form .form-row .form-group input {
+  border-radius: 0;
+  background: transparent;
+  color: #CCCCCC;
+  border: 0;
+  border-bottom: 2px solid #CCCCCC;
+}
+
+main#contact-page .contact-sec form .form-row .form-group input ~ label {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main#contact-page .contact-sec form .form-row .form-group input:focus, main#contact-page .contact-sec form .form-row .form-group input.has-value {
+  box-shadow: none;
+}
+
+main#contact-page .contact-sec form .form-row .form-group input:focus ~ label, main#contact-page .contact-sec form .form-row .form-group input.has-value ~ label {
+  color: #A2905E;
+  top: -10px;
+  font-size: 14px;
+}
+
+main#contact-page .contact-sec form .form-row .form-group input:focus ~ .focus-border, main#contact-page .contact-sec form .form-row .form-group input.has-value ~ .focus-border {
+  width: calc(100% - 10px);
+}
+
+main#contact-page .contact-sec form .form-row .form-group textarea {
+  border-radius: 0;
+  background: transparent;
+  color: #CCCCCC;
+  border: 0;
+  border-bottom: 2px solid #CCCCCC;
+}
+
+main#contact-page .contact-sec form .form-row .form-group textarea ~ label {
+  top: 6px;
+}
+
+main#contact-page .contact-sec form .form-row .form-group textarea:focus, main#contact-page .contact-sec form .form-row .form-group textarea.has-value {
+  box-shadow: none;
+}
+
+main#contact-page .contact-sec form .form-row .form-group textarea:focus ~ label, main#contact-page .contact-sec form .form-row .form-group textarea.has-value ~ label {
+  color: #A2905E;
+  top: -16px;
+  font-size: 14px;
+}
+
+main#contact-page .contact-sec form .form-row .form-group textarea:focus ~ .focus-border, main#contact-page .contact-sec form .form-row .form-group textarea.has-value ~ .focus-border {
+  width: calc(100% - 10px);
+}
+
+main#contact-page .contact-sec aside h4 {
+  color: #A2905E;
+}
+
+main#contact-page .contact-sec aside p {
+  word-break: break-word;
+}
+
+main#contact-page .contact-sec aside .info-group {
+  margin-bottom: 50px;
+}
+
+main#contact-page .contact-sec aside .info-group .social-group a {
+  color: #CCCCCC;
+}
+
+main#contact-page .contact-sec aside .info-group .social-group a:hover {
+  text-decoration: none;
+}
+
+main#contact-page .contact-sec aside .info-group .social-group a:hover .social-icon {
+  color: #A2905E;
+}
+
+main#contact-page .contact-sec aside .info-group .social-group a .social-icon {
+  display: inline-block;
+  width: 26px;
+}

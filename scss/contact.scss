@@ -1,0 +1,195 @@
+$main_white: #f5f5f5;
+$main_grey: #CCCCCC;
+$main_yellow: #A2905E;
+$main_black: #191718;
+
+@mixin ease-out{
+    transition: all .2s ease-out;
+}
+
+.bg-black{
+    background: $main_black;
+    color: $main_grey;
+}
+
+.btn-outline-yellow{
+    border: 2px solid $main_yellow;
+    border-radius: 0;
+    background: transparent;
+    color: $main_yellow;
+
+    &:hover{
+        background: $main_yellow;
+        color: $main_white;
+    }
+
+    &:focus{
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba($main_yellow,.25);
+    }
+}
+
+header{
+    .navbar{
+        box-shadow: 0 0 10px #222;
+
+        .nav-item{
+            padding: 0 0.25em;
+            a{
+                color: $main_white;
+
+                &:hover{
+                    color: $main_grey;
+                }
+    
+                &.active{
+                    border-bottom: 2px solid $main_yellow;
+                }
+            }
+        }
+
+        a.navbar-brand{
+            color: $main_yellow;
+            font-size: 30px;
+        }
+    }
+}
+
+main#contact-page{
+    background: url(https://images.unsplash.com/photo-1453090927415-5f45085b65c0?ixlib=rb-0.3.5&s=c26c459d9fd2cabe14c93636bc6de370&auto=format&fit=crop&w=1931&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .contact-sec{
+        background: rgba(#000, .7);
+        box-shadow: 0 0 10px #000;
+        color: $main_grey;
+        padding: 50px;
+
+        form{
+
+            h3{
+                color: $main_yellow;
+            }
+
+            .form-row{
+                margin-top: 30px;
+
+                .form-group{
+                    position: relative;
+                    margin-bottom: 50px;
+
+                    label{
+                        position: absolute;
+                        left: 15px;
+                        margin-bottom: 0;
+                        cursor: text;
+                        @include ease-out;
+                    }
+    
+                    .focus-border{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        width: 0;
+                        height: 2px;
+                        margin: auto;
+                        background: $main_yellow;
+                        @include ease-out;
+                    }
+    
+                    input{
+                        border-radius: 0;
+                        background: transparent;
+                        color: $main_grey;
+                        border: 0;
+                        border-bottom: 2px solid $main_grey;
+    
+                        &~label{
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+    
+                        &:focus, &.has-value{
+                            box-shadow: none;
+
+                            &~label{
+                                color: $main_yellow;
+                                top: -10px;
+                                font-size: 14px;
+                            }
+
+                            &~.focus-border{
+                                width: calc(100% - 10px);
+                            }
+                        }
+                    }
+    
+                    textarea{
+                        border-radius: 0;
+                        background: transparent;
+                        color: $main_grey;
+                        border: 0;
+                        border-bottom: 2px solid $main_grey;
+
+                        &~label{
+                            top: 6px;
+                        }
+    
+                        &:focus, &.has-value{
+                            box-shadow: none;
+
+                            &~label{
+                                color: $main_yellow;
+                                top: -16px;
+                                font-size: 14px;
+                            }
+
+                            &~.focus-border{
+                                width: calc(100% - 10px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        aside{
+            h4{
+                color: $main_yellow;
+            }
+
+            p{
+                word-break: break-word;
+            }
+
+            .info-group{
+                margin-bottom: 50px;
+
+                .social-group{
+
+                    a{
+                        color: $main_grey;
+
+                        &:hover{
+                            text-decoration: none;
+
+                            .social-icon{
+                                color: $main_yellow;
+                            }
+                        }
+
+                        .social-icon{
+                            display: inline-block;
+                            width: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
