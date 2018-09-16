@@ -35,8 +35,9 @@ header{
 
         .nav-item{
             padding: 0 0.25em;
-            a{
+            .nav-link{
                 color: $main_white;
+                display: inline-block;
 
                 &:hover{
                     color: $main_grey;
@@ -51,6 +52,17 @@ header{
         a.navbar-brand{
             color: $main_yellow;
             font-size: 30px;
+        }
+
+        .navbar-toggler{
+            border-color: $main_yellow;
+            border-radius: 0;
+            color: $main_yellow;
+
+            &:focus{
+                outline: none;
+                box-shadow: 0 0 0 0.2rem rgba($main_yellow,.25);
+            }
         }
     }
 }
