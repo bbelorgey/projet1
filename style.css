@@ -1,9 +1,40 @@
 body{
     background-color: #000007;
 }
-cards {
-    border: 5px solid #0000B7;
+.borderCard {
+    border-bottom: 1px solid #0000B7;
 }
-.band-title{
-
+.borderCard:hover {
+    border: 2px solid #0000B7;
+}
+.borderCard:hover img{
+    opacity: 0.7;
+}
+.borderCard:hover h3{
+    position:absolute;
+    bottom:75%;
+    margin-left:3%;
+    margin-left:3%;
+    color:rgb(253, 248, 231);
+    background-color: rgba(49, 49, 49, 0.5);
+}
+.borderCard:hover h4{
+    position:absolute;
+    bottom:60%;
+    margin-left:25%;
+    margin-left:25%;
+    color:rgb(253, 248, 231);
+    font-weight: bold;
+    background-color: rgba(49, 49, 49, 0.5);
+    font-size: 2em;
+}
+.page-link{
+    border: 1px solid #00064e;
+}
+.page-item.disabled .page-link {
+    border: 1px solid #00064e;
+}
+.borderCard:hover p.cardText{
+    font-size: 1.2em;
+    font-weight:bold;
 }
