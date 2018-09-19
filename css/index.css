@@ -1,28 +1,28 @@
 body{
     background-color: #000007;
+    font-family: 'Lato', sans-serif;
 }
-.borderCard {
-    border-bottom: 1px solid #0000B7;
+.borderCard{
+    box-shadow: 2px 2px 0.5em #777;
+    background-color: #333;
+    color:#eee;
 }
 .borderCard:hover {
-    border: 1px solid #0000B7;
+
 }
 .borderCard:hover img{
     opacity: 0.7;
 }
+.borderCard h3, .borderCard h4{
+    transition:all 1s;
+}
 .borderCard:hover h3{
-    position:absolute;
-    bottom:75%;
-    margin-left:3%;
-    margin-left:3%;
+    transform: translateY(-200%);
     color:rgb(253, 248, 231);
     background-color: rgba(49, 49, 49, 0.5);
 }
 .borderCard:hover h4{
-    position:absolute;
-    bottom:60%;
-    margin-left:25%;
-    margin-left:25%;
+    transform: translateY(-200%);
     color:rgb(253, 248, 231);
     font-weight: bold;
     background-color: rgba(49, 49, 49, 0.5);
@@ -35,6 +35,46 @@ body{
     border: 1px solid #00064e;
 }
 .borderCard:hover p.cardText{
-    font-size: 1.2em;
-    font-weight:bold;
+/*    font-size: 1.2em;
+    font-weight:bold; */
 }
+.lienArticle {
+    border: 1px solid rgb(147, 195, 253);
+    color:#fff;
+    padding: .26em .74em ;
+    border-radius:5px;
+}
+.lienArticle:hover{
+    border: 1px solid #0058C4;
+    text-decoration:none;
+    color:#fff;
+}
+.carousel-caption {
+    background-color:black;
+    z-index:11;
+    position: absolute;
+    right: 12.5%;
+    bottom: 0px;
+    left: 12.5%;
+    z-index: 10;
+    padding:1%;
+    opacity:0.7;
+    color: #fff;
+    text-align: center;
+  }
+  body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.2em;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .carousel-control-prev-icon {
+    background-image:url('images/left.png');
+  }
+  .carousel-control-next-icon {
+    background-image:url('images/right.png');
+  }
+  .pagination{
+  }

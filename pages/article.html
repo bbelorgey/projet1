@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/carousel.css">
-    <link rel="stylesheet" href="../css/article.css">
+  <link rel="stylesheet" href="../css/article.css">
   <link rel="stylesheet" href="../css/header&footer.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
@@ -54,12 +53,10 @@
           <img class="d-block w-75 centered border" src="../images/images1200x600/photo7.jpg" alt="First slide">
           <div class="carousel-caption d-none d-md-block">
             <div class="text-center text-justify">
-              <p>Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur
-                fere
-                trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum
-                Eius
-                populus ab incunabulis.</p>
-              <a class="text-bold text-or" style="font-size:1.2em;" href="#">Nihil est enim</a>
+              <h2 class="text-white">Sed cautela nimia</h2>
+              <p>Siquis enim militarium vel honoratorum aut nobilis trecentis, circummurana pertulit bella, deinde
+                aetatem ingressus...</p>
+              <a class="text-bold text-or" style="font-size:1.2em;" href="#">Lire l'article</a>
             </div>
           </div>
         </div>
@@ -67,12 +64,10 @@
         <div class="carousel-item">
           <img class="d-block w-75 centered border" src="../images/images1200x600/photo11.jpg" alt="First slide">
           <div class="carousel-caption d-none d-md-block">
-            <p>Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur
-              fere
-              trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum
-              Eius
-              populus ab incunabulis.</p>
-            <a class="text-bold text-or" style="font-size:1.2em;" href="#">Nihil est enim</a>
+            <h2 class="text-white">Sed cautela nimia</h2>
+            <p>Siquis enim militarium vel honoratorum aut nobilis trecentis, circummurana pertulit bella, deinde
+              aetatem ingressus...</p>
+            <a class="text-bold text-or" style="font-size:1.2em;" href="#">Lire l'article</a>
           </div>
         </div>
 
@@ -80,13 +75,10 @@
 
           <img class="d-block w-75 centered border" src="../images/images1200x600/photo1.jpg" alt="First slide">
           <div class="carousel-caption d-none d-md-block ">
-
-            <p>Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur
-              fere
-              trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum
-              Eius
-              populus ab incunabulis.</p>
-            <a class="text-bold text-or" style="font-size:1.2em;" href="#">Nihil est enim</a>
+            <h2 class="text-white">Sed cautela nimia</h2>
+            <p>Siquis enim militarium vel honoratorum aut nobilis trecentis, circummurana pertulit bella, deinde
+              aetatem ingressus...</p>
+            <a class="text-bold text-or" style="font-size:1.2em;" href="#">Lire l'article</a>
           </div>
 
         </div>
@@ -114,8 +106,8 @@
             <div class="container">
               <div class="row">
                 <div class="padding-2">
-                  <p class="border text-white padding-10 carre float-right">09/17/2018</p>
-                  <p class="border text-white padding-10 carre">John Doe</p>
+                  <button class="btn-submit ">John Doe</button>
+                  <button class="btn-submit ">19/09/2018</button>
                 </div>
               </div>
             </div>
@@ -211,222 +203,222 @@
         </div>
 
         <div class="container padding-lr-10">
-          <h2 class="navbar-brand text-or" href="#">Comments</h2>
-          <button class="btn-submit padding-2" type="button" data-toggle="collapse" data-target="#collapseExample"
-            aria-expanded="false" aria-controls="collapseExample">Write a comment</button>
-          <div class="collapse bg-black" id="collapseExample">
-            <div class="card card-body ">
-              <form action="#">
-
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                  <option value="australia">Australia</option>
-                  <option value="canada">Canada</option>
-                  <option value="usa">USA</option>
-                </select>
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-
+          <div class="bg-black">
+            <h2 class="navbar-brand text-or ml-2" href="#">Comments</h2>
+            <button class="btn-submit padding-2" type="button" data-toggle="collapse" data-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">Write your comment</button>
+          </div>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body  bg-light margin-top">
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Name</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name...">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Title</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title...">
+                </div>
+                <div class="form-group">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="write your comment..."></textarea>
+                </div>
+                <button class="btn-submit padding-5" style="background-color:#0058C4">Send</button>
               </form>
             </div>
           </div>
-        
-
-        <div class=" padding-5">
-          <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
-              <img src="../images/avatar.png" class="w-75">
-            </div>
-            <div class="col-lg-10 col-md-9 col-sm-9 col-xs-9">
-              <h5>Hello world</h5>
-              <p>qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire
-                patiemur?
-                An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non
-              </p>
-            </div>
-          </div>
-
-          <hr>
-
-          <div class="row  margin-top">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
-              <img src="../images/avatar.png" class="w-75">
-            </div>
-            <div class="col-lg-10 col-md-9 col-sm-9 col-xs-9">
-              <h5>Hello world</h5>
-              <p>qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire
-                patiemur?
-                An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non
-              </p>
-            </div>
-          </div>
-
-          <hr>
-
-          <div class="row  margin-top">
-            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
-              <img src="../images/avatar.png" class="w-75">
-            </div>
-            <div class="col-lg-10 col-md-9 col-sm-9 col-xs-9">
-              <h5>Hello world</h5>
-              <p>qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire
-                patiemur?
-                An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non
-              </p>
-              <br>
-              <br>
-              <br>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
 
 
-    <div class="col-xl-3 margin-top">
-      <div class="padding-5">
-        <div class="container">
-          <div class="row">
-            <div class="padding-2 col-lg-12">
-              <p class="border text-white padding-10 carre text-center">Newsletter</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="thumbnail well">
-            <p>Subscribe to our weekly Newsletter and stay tuned.</p>
-
-            <form action="" method="post" role="form">
-              <div class="input-group">
-                <input class="form-control bg-black" type="text" id="" name="" placeholder="your@email.com">
+          <div class=" padding-5">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
+                <img src="../images/avatar.png" class="media-object" style="width:60px">
               </div>
+              <div class="col-lg-10 col-md-9 col-sm-9 col-xs-9">
+                <h5>Hello world</h5>
+                <p class="text-justify">qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant,
+                  hos perire
+                  patiemur?
+                  An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non
+                </p>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row  margin-top">
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
+                <img src="../images/avatar.png" class="media-object" style="width:60px">
+              </div>
+              <div class="col-lg-10 col-md-9 col-sm-9 col-xs-9">
+                <h5>Hello world</h5>
+                <p class="text-justify">qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant,
+                  hos perire
+                  patiemur?
+                  An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non
+                </p>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row  margin-top">
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
+                <img src="../images/avatar.png" class="media-object" style="width:60px">
+              </div>
+              <div class="col-lg-10 col-md-9 col-sm-9 col-xs-9">
+                <h5>Hello world</h5>
+                <p class="text-justify">qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant,
+                  hos perire
+                  patiemur?
+                  An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non
+                </p>
+                <br>
+                <br>
+                <br>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xl-3 margin-top">
+
+        <div class="padding-5" style="
+          box-shadow: 0 0 1em #333;
+          ">
+          <div class="">
+            <div class="search-container">
+              <form class="form-inline ml-2 ">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input class="form-control bg-black w-75 ml-2 centered" type="text" placeholder="Search" style="color:white"
+                  aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="padding-5" style="
+          box-shadow: 0 0 1em #333;
+          ">
+         <h3 class="text-white p-3">Newsletter</h3>
+
+
+          <div class="container mt-2">
+            <div class="thumbnail well">
+              <p>Subscribe to our weekly Newsletter and stay tuned.</p>
+
+              <form action="" method="post" role="form">
+                <div class="input-group">
+                  <input class="form-control bg-black" type="text" id="" name="" placeholder="your@email.com">
+                </div>
+                <br>
+                <button class="btn-submit padding-5 text-center centered">suscribe</button>
+              </form>
               <br>
-              <button class="btn-submit padding-5 text-center centered">suscribe</button>
-            </form>
-            <br>
 
+            </div>
           </div>
         </div>
+
+
+        <br>
+
+
+        <div class="padding-5" style="
+          box-shadow: 0 0 1em #333;
+          ">
+          <h3 class="text-white p-3">Prochains concerts</h3>
+
+
+          <div class="container mt-2">
+            <div class="row">
+              <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
+                <img src="../images/dynamo.jpg" class="w-100 border">
+              </div>
+              <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9">
+                <h5>Date</h5>
+                <p>Lieu, heure</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
+                <img src="../images/dynamo2.jpg" class="w-100 border">
+              </div>
+              <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9">
+                <h5>Date</h5>
+                <p>Lieu, heure</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
+                <img src="../images/dynamo3.jpg" class="w-100 border">
+              </div>
+              <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9">
+                <h5>Date</h5>
+                <p>Lieu, heure</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
+                <img src="../images/dynamo4.jpg" class="w-100 border">
+              </div>
+              <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9">
+                <h5>Date</h5>
+                <p>Lieu, heure</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
+                <img src="../images/dynamo5.jpg" class="w-100 border padding-2">
+              </div>
+              <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9">
+                <h5>Date</h5>
+                <p>Lieu, heure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+
+        <div class="padding-5" style="
+        box-shadow: 0 0 1em #333;
+        ">
+
+                <h3 class="text-white p-3">Derniers articles</h3>
+
+          <ul class="text-white" style="list-style-type: none">
+            <li><a href="#">Sed cautela nimia</a></li>
+            <li><a href="#">Sed cautela nimia</a></li>
+            <li><a href="#">Sed cautela nimia</a></li>
+            <li><a href="#">Sed cautela nimia</a></li>
+            <li><a href="#">Sed cautela nimia</a></li>
+          </ul>
+        </div>
+
+
       </div>
-      <br>
-
-      <div class="padding-5">
-        <div class="container">
-          <div class="row">
-            <div class="padding-2 col-lg-12">
-              <p class="border text-white padding-10 carre text-center">Prochains concerts</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
-              <img src="../img/image1.jpg" class="w-100 border">
-            </div>
-            <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9">
-              <h5>Date</h5>
-              <p>Lieu, heure</p>
-            </div>
-          </div>
-
-          <hr>
-
-          <div class="row">
-            <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
-              <img src="../img/image1.jpg" class="w-100 border">
-            </div>
-            <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9">
-              <h5>Date</h5>
-              <p>Lieu, heure</p>
-            </div>
-          </div>
-
-          <hr>
-
-          <div class="row">
-            <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
-              <img src="../img/image1.jpg" class="w-100 border">
-            </div>
-            <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9">
-              <h5>Date</h5>
-              <p>Lieu, heure</p>
-            </div>
-          </div>
-
-          <hr>
-
-          <div class="row">
-            <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
-              <img src="../img/image1.jpg" class="w-100 border">
-            </div>
-            <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9">
-              <h5>Date</h5>
-              <p>Lieu, heure</p>
-            </div>
-          </div>
-
-          <hr>
-
-          <div class="row">
-            <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
-              <img src="../img/image1.jpg" class="w-100 border">
-            </div>
-            <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9">
-              <h5>Date</h5>
-              <p>Lieu, heure</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br>
-
-      <div class="padding-5 rounded">
-        <div class="">
-          <div class="search-container">
-            <form class="form-inline">
-              <i class="fa fa-search" aria-hidden="true"></i>
-              <input class="form-control bg-black w-75" type="text" placeholder="Search" style="color:white" aria-label="Search">
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <br>
-
-
-      <div class="padding-5">
-        <div class="container">
-          <div class="row">
-            <div class="padding-2 col-lg-12">
-              <p class="border text-white padding-10 carre text-center">Derniers articles</p>
-            </div>
-          </div>
-        </div>
-        <ul class="text-white">
-          <li><a href="#">article 1 // date // auteur</a></li>
-          <li><a href="#">article 1 // date // auteur</a></li>
-          <li><a href="#">article 1 // date // auteur</a></li>
-          <li><a href="#">article 1 // date // auteur</a></li>
-          <li><a href="#">article 1 // date // auteur</a></li>
-        </ul>
-      </div>
-
-
     </div>
-  </div>
   </div>
 
 
