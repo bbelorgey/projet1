@@ -3,7 +3,7 @@
     padding: 10%;
   }
   .padding-5 {
-    padding: 5%;
+    padding: 3%;
   }
   .padding-2 {
     padding: 2%;
@@ -61,7 +61,7 @@ input.btn-primary {
   background-color:#0c0b0b;
 }
 .text-or {
-  color:#cc7a00;
+  color:#0058C4;
   background:transparent;
 }
 .nav-link {
