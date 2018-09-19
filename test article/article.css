@@ -1,5 +1,4 @@
-.active {
-  }
+
   .padding-10 {
     padding: 10%;
   }
@@ -37,12 +36,6 @@
   }
 
 
- #trait {
-    border-top: 0.5em solid #111; 
-    width : 100%;
-    border-radius: 0.5em;
-    
-}
 
 .center {
   display: inline-block;
@@ -57,15 +50,6 @@ input.btn-primary {
 .round {
   border-radius:1em;
 }
-ul {
-	list-style-type:none;
-}
-li a {
-  color:black;
-  font-size: 1em;
-  
-}
-
 
 
 
@@ -98,11 +82,11 @@ li a {
 }
 body {
   font-family: 'Lato', sans-serif;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 .carousel-control-next-icon, .carousel-control-prev-icon {
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
 }
 .carousel-control-prev-icon {
   background-image:url('../img/left.png');
@@ -127,15 +111,8 @@ li a:after {
   transition: width .3s ease, background-color .3s ease;
   z-index: 100;
 }
-li a:hover:after {
-  width: 100%;
-  color:#e0ab5c;
-}
-a:hover{
-  color:#C8C8C8;
-}
 p{
-  font-size:0.8em;
+  font-size:1em;
   color:#C8C8C8;
 }
 h2{
@@ -148,4 +125,12 @@ h2{
 .border {
   border:1px solid #e0ab5c;
   z-index: -1;
+}
+.carre {
+  width:100%;
+  height:auto;
+}
+.text-centrer {
+  line-height:7em; /* centrage vertical */
+text-align:center; /* centrage horizontal */
 }
