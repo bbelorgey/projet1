@@ -1,0 +1,124 @@
+$main_white: #f5f5f5;
+$second_white: #DDD;
+$main_blue: #0058c4;
+$main_black: #191718;
+
+.scrollToTop{
+    display: none;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    padding: 1em;
+    background-color: #373436;
+    border-radius: .25em;
+    cursor: pointer;
+    color: $main_white;
+    -webkit-transition: transform.2s ease-out;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+}
+
+.scrollToTop:hover{
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.bg-black {
+    background: $main_black;
+    color: $second_white;
+}
+
+.btn-outline-yellow {
+    border: 2px solid $main_blue;
+    border-radius: 0;
+    background: transparent;
+    color: $main_blue;
+}
+
+.btn-outline-yellow:hover {
+    background: $main_blue;
+    color: $main_white;
+}
+
+.btn-outline-yellow:focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba($main_blue, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba($main_blue, 0.25);
+}
+
+
+header{
+    .navbar{
+        -webkit-box-shadow: 0 0 10px #222;
+        box-shadow: 0 0 10px #222;
+
+        .nav-item{
+            padding: 0 0.25em;
+
+            .nav-link{
+                color: $main_white;
+                display: inline-block;
+                position: relative;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0;
+                    height: 2px;
+                    background: $main_blue;
+                    -webkit-transition: all .2s ease-out;
+                    transition: all .2s ease-out;
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 50%;
+                    width: 0;
+                    height: 2px;
+                    background: $main_blue;
+                    -webkit-transition: all .2s ease-out;
+                    transition: all .2s ease-out;
+                }
+
+                &:hover{
+                    color: $second_white;
+
+                    &::before, &::after{
+                        width: 50%;
+                    }
+                }
+
+                &.active{
+                    // border-bottom: 2px solid $main_blue;
+
+                    &::before, &::after{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        a.navbar-brand{
+            color: $main_blue;
+            font-size: 30px;
+        }
+
+        .navbar-toggler{
+            border-color: $main_blue;
+            border-radius: 0;
+            color: $main_blue;
+
+            &:focus{
+                outline: none;
+                -webkit-box-shadow: 0 0 0 0.2rem rgba($main_blue,.25);
+                box-shadow: 0 0 0 0.2rem rgba($main_blue,.25);
+            }
+        }
+    }
+}

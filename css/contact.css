@@ -1,48 +1,25 @@
 .bg-black {
   background: #191718;
-  color: #CCCCCC;
+  color: #DDD;
 }
 
-.btn-outline-yellow {
-  border: 2px solid #A2905E;
+.btn-submit {
+  border: 2px solid #DDD;
   border-radius: 0;
   background: transparent;
-  color: #A2905E;
+  color: #DDD;
 }
 
-.btn-outline-yellow:hover {
-  background: #A2905E;
+.btn-submit:hover {
+  background: #0058c4;
+  border-color: #0058c4;
   color: #f5f5f5;
 }
 
-.btn-outline-yellow:focus {
+.btn-submit:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(162, 144, 94, 0.25);
-}
-
-header .navbar {
-  box-shadow: 0 0 10px #222;
-}
-
-header .navbar .nav-item {
-  padding: 0 0.25em;
-}
-
-header .navbar .nav-item a {
-  color: #f5f5f5;
-}
-
-header .navbar .nav-item a:hover {
-  color: #CCCCCC;
-}
-
-header .navbar .nav-item a.active {
-  border-bottom: 2px solid #A2905E;
-}
-
-header .navbar a.navbar-brand {
-  color: #A2905E;
-  font-size: 30px;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 88, 196, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 88, 196, 0.25);
 }
 
 main#contact-page {
@@ -55,14 +32,15 @@ main#contact-page {
 }
 
 main#contact-page .contact-sec {
-  background: rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 10px #000;
-  color: #CCCCCC;
+  background: rgba(25, 23, 24, 0.8);
+  -webkit-box-shadow: 0 0 10px #191718;
+  box-shadow: 0 0 10px #191718;
+  color: #DDD;
   padding: 50px;
 }
 
 main#contact-page .contact-sec form h3 {
-  color: #A2905E;
+  color: #0058c4;
 }
 
 main#contact-page .contact-sec form .form-row {
@@ -79,6 +57,7 @@ main#contact-page .contact-sec form .form-row .form-group label {
   left: 15px;
   margin-bottom: 0;
   cursor: text;
+  -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
 
@@ -90,29 +69,32 @@ main#contact-page .contact-sec form .form-row .form-group .focus-border {
   width: 0;
   height: 2px;
   margin: auto;
-  background: #A2905E;
+  background: #0058c4;
+  -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
 
 main#contact-page .contact-sec form .form-row .form-group input {
   border-radius: 0;
   background: transparent;
-  color: #CCCCCC;
+  color: #DDD;
   border: 0;
-  border-bottom: 2px solid #CCCCCC;
+  border-bottom: 2px solid #DDD;
 }
 
 main#contact-page .contact-sec form .form-row .form-group input ~ label {
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 main#contact-page .contact-sec form .form-row .form-group input:focus, main#contact-page .contact-sec form .form-row .form-group input.has-value {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 main#contact-page .contact-sec form .form-row .form-group input:focus ~ label, main#contact-page .contact-sec form .form-row .form-group input.has-value ~ label {
-  color: #A2905E;
+  color: #0058c4;
   top: -10px;
   font-size: 14px;
 }
@@ -124,9 +106,9 @@ main#contact-page .contact-sec form .form-row .form-group input:focus ~ .focus-b
 main#contact-page .contact-sec form .form-row .form-group textarea {
   border-radius: 0;
   background: transparent;
-  color: #CCCCCC;
+  color: #DDD;
   border: 0;
-  border-bottom: 2px solid #CCCCCC;
+  border-bottom: 2px solid #DDD;
 }
 
 main#contact-page .contact-sec form .form-row .form-group textarea ~ label {
@@ -134,11 +116,12 @@ main#contact-page .contact-sec form .form-row .form-group textarea ~ label {
 }
 
 main#contact-page .contact-sec form .form-row .form-group textarea:focus, main#contact-page .contact-sec form .form-row .form-group textarea.has-value {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 main#contact-page .contact-sec form .form-row .form-group textarea:focus ~ label, main#contact-page .contact-sec form .form-row .form-group textarea.has-value ~ label {
-  color: #A2905E;
+  color: #0058c4;
   top: -16px;
   font-size: 14px;
 }
@@ -148,7 +131,7 @@ main#contact-page .contact-sec form .form-row .form-group textarea:focus ~ .focu
 }
 
 main#contact-page .contact-sec aside h4 {
-  color: #A2905E;
+  color: #0058c4;
 }
 
 main#contact-page .contact-sec aside p {
@@ -160,7 +143,7 @@ main#contact-page .contact-sec aside .info-group {
 }
 
 main#contact-page .contact-sec aside .info-group .social-group a {
-  color: #CCCCCC;
+  color: #DDD;
 }
 
 main#contact-page .contact-sec aside .info-group .social-group a:hover {
@@ -168,7 +151,7 @@ main#contact-page .contact-sec aside .info-group .social-group a:hover {
 }
 
 main#contact-page .contact-sec aside .info-group .social-group a:hover .social-icon {
-  color: #A2905E;
+  color: #0058c4;
 }
 
 main#contact-page .contact-sec aside .info-group .social-group a .social-icon {

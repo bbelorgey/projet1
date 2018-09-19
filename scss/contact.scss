@@ -1,59 +1,76 @@
 $main_white: #f5f5f5;
-$main_grey: #CCCCCC;
-$main_yellow: #A2905E;
+$second_white: #DDD;
+$main_blue: #0058c4;
 $main_black: #191718;
 
 @mixin ease-out{
+    -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
 }
 
 .bg-black{
     background: $main_black;
-    color: $main_grey;
+    color: $second_white;
 }
 
-.btn-outline-yellow{
-    border: 2px solid $main_yellow;
+.btn-submit{
+    border: 2px solid $second_white;
     border-radius: 0;
     background: transparent;
-    color: $main_yellow;
+    color: $second_white;
 
     &:hover{
-        background: $main_yellow;
+        background: $main_blue;
+        border-color: $main_blue;
         color: $main_white;
     }
 
     &:focus{
         outline: 0;
-        box-shadow: 0 0 0 0.2rem rgba($main_yellow,.25);
+        -webkit-box-shadow: 0 0 0 0.2rem rgba($main_blue,.25);
+        box-shadow: 0 0 0 0.2rem rgba($main_blue,.25);
     }
 }
 
-header{
-    .navbar{
-        box-shadow: 0 0 10px #222;
-
-        .nav-item{
-            padding: 0 0.25em;
-            a{
-                color: $main_white;
-
-                &:hover{
-                    color: $main_grey;
-                }
-    
-                &.active{
-                    border-bottom: 2px solid $main_yellow;
-                }
-            }
-        }
-
-        a.navbar-brand{
-            color: $main_yellow;
-            font-size: 30px;
-        }
-    }
-}
+// header{
+//     .navbar{
+//         -webkit-box-shadow: 0 0 10px #222;
+//         box-shadow: 0 0 10px #222;
+//
+//         .nav-item{
+//             padding: 0 0.25em;
+//             .nav-link{
+//                 color: $main_white;
+//                 display: inline-block;
+//
+//                 &:hover{
+//                     color: $second_white;
+//                 }
+//
+//                 &.active{
+//                     border-bottom: 2px solid $main_blue;
+//                 }
+//             }
+//         }
+//
+//         a.navbar-brand{
+//             color: $main_blue;
+//             font-size: 30px;
+//         }
+//
+//         .navbar-toggler{
+//             border-color: $main_blue;
+//             border-radius: 0;
+//             color: $main_blue;
+//
+//             &:focus{
+//                 outline: none;
+//                 -webkit-box-shadow: 0 0 0 0.2rem rgba($main_blue,.25);
+//                 box-shadow: 0 0 0 0.2rem rgba($main_blue,.25);
+//             }
+//         }
+//     }
+// }
 
 main#contact-page{
     background: url(https://images.unsplash.com/photo-1453090927415-5f45085b65c0?ixlib=rb-0.3.5&s=c26c459d9fd2cabe14c93636bc6de370&auto=format&fit=crop&w=1931&q=80);
@@ -64,15 +81,16 @@ main#contact-page{
     padding-bottom: 80px;
 
     .contact-sec{
-        background: rgba(#000, .7);
-        box-shadow: 0 0 10px #000;
-        color: $main_grey;
+        background: rgba($main_black, .8);
+        -webkit-box-shadow: 0 0 10px $main_black;
+        box-shadow: 0 0 10px $main_black;
+        color: $second_white;
         padding: 50px;
 
         form{
 
             h3{
-                color: $main_yellow;
+                color: $main_blue;
             }
 
             .form-row{
@@ -89,7 +107,7 @@ main#contact-page{
                         cursor: text;
                         @include ease-out;
                     }
-    
+
                     .focus-border{
                         position: absolute;
                         bottom: 0;
@@ -98,27 +116,29 @@ main#contact-page{
                         width: 0;
                         height: 2px;
                         margin: auto;
-                        background: $main_yellow;
+                        background: $main_blue;
                         @include ease-out;
                     }
-    
+
                     input{
                         border-radius: 0;
                         background: transparent;
-                        color: $main_grey;
+                        color: $second_white;
                         border: 0;
-                        border-bottom: 2px solid $main_grey;
-    
+                        border-bottom: 2px solid $second_white;
+
                         &~label{
                             top: 50%;
+                            -webkit-transform: translateY(-50%);
                             transform: translateY(-50%);
                         }
-    
+
                         &:focus, &.has-value{
+                            -webkit-box-shadow: none;
                             box-shadow: none;
 
                             &~label{
-                                color: $main_yellow;
+                                color: $main_blue;
                                 top: -10px;
                                 font-size: 14px;
                             }
@@ -128,23 +148,24 @@ main#contact-page{
                             }
                         }
                     }
-    
+
                     textarea{
                         border-radius: 0;
                         background: transparent;
-                        color: $main_grey;
+                        color: $second_white;
                         border: 0;
-                        border-bottom: 2px solid $main_grey;
+                        border-bottom: 2px solid $second_white;
 
                         &~label{
                             top: 6px;
                         }
-    
+
                         &:focus, &.has-value{
+                            -webkit-box-shadow: none;
                             box-shadow: none;
 
                             &~label{
-                                color: $main_yellow;
+                                color: $main_blue;
                                 top: -16px;
                                 font-size: 14px;
                             }
@@ -160,7 +181,7 @@ main#contact-page{
 
         aside{
             h4{
-                color: $main_yellow;
+                color: $main_blue;
             }
 
             p{
@@ -173,13 +194,13 @@ main#contact-page{
                 .social-group{
 
                     a{
-                        color: $main_grey;
+                        color: $second_white;
 
                         &:hover{
                             text-decoration: none;
 
                             .social-icon{
-                                color: $main_yellow;
+                                color: $main_blue;
                             }
                         }
 

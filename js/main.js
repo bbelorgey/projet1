@@ -8,7 +8,21 @@ $(document).ready(function(){
         } else {
           $(this).addClass('has-value');
         }
-      
+
+      });
+
+      $(window).scroll(function(){
+          if($(this).scrollTop() > 100){
+              $('.scrollToTop').fadeIn();
+          }
+          else{
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      $('.scrollToTop').on('click', function(){
+            $('html, body').animate({scrollTop : 0},600);
+            return false;
       });
 
 });
