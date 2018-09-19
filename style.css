@@ -5,7 +5,7 @@ body{
     border-bottom: 1px solid #0000B7;
 }
 .borderCard:hover {
-    border: 2px solid #0000B7;
+    border: 1px solid #0000B7;
 }
 .borderCard:hover img{
     opacity: 0.7;
