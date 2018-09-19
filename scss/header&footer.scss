@@ -9,7 +9,8 @@ $main_black: #191718;
     right: 1em;
     bottom: 1em;
     padding: 1em;
-    background-color: #373436;
+    background-color: #444;
+    border: 1px solid $main_white;
     border-radius: .25em;
     cursor: pointer;
     color: $main_white;
@@ -18,12 +19,15 @@ $main_black: #191718;
     transition: -webkit-transform .2s ease-out;
     transition: transform .2s ease-out;
     transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+
+    &:hover{
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+        background: $main_white;
+        color: $main_black;
+    }
 }
 
-.scrollToTop:hover{
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-}
 
 .bg-black {
     background: $main_black;
