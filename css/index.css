@@ -3,6 +3,7 @@ body{
     font-family: 'Lato', sans-serif;
 }
 .borderCard{
+    -webkit-box-shadow: 2px 2px 0.5em #777;
     box-shadow: 2px 2px 0.5em #777;
     background-color: #333;
     color:#eee;
@@ -14,14 +15,18 @@ body{
     opacity: 0.7;
 }
 .borderCard h3, .borderCard h4{
-    transition:all 1s;
+    -webkit-transition:all 1s;
+    -webkit-transition:all .5s;
+    transition:all .5s;
 }
 .borderCard:hover h3{
+    -webkit-transform: translateY(-200%);
     transform: translateY(-200%);
     color:rgb(253, 248, 231);
     background-color: rgba(49, 49, 49, 0.5);
 }
 .borderCard:hover h4{
+    -webkit-transform: translateY(-200%);
     transform: translateY(-200%);
     color:rgb(253, 248, 231);
     font-weight: bold;
@@ -45,7 +50,8 @@ body{
     border-radius:5px;
 }
 .lienArticle:hover{
-    border: 1px solid #0058C4;
+    border-color: #0058C4;
+    background: #0058C4;
     text-decoration:none;
     color:#fff;
 }
@@ -64,7 +70,6 @@ body{
   }
   body {
     font-family: 'Lato', sans-serif;
-    line-height: 1.2em;
   }
   .carousel-control-next-icon, .carousel-control-prev-icon {
     width: 1.5em;
@@ -76,5 +81,6 @@ body{
   .carousel-control-next-icon {
     background-image:url('images/right.png');
   }
-  .pagination{
+  .widget-group h5, .widget-group a{
+      color: #DDD;
   }
