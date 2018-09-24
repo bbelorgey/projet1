@@ -1,0 +1,183 @@
+// Imports
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+// Colors
+
+$main_black: #000007;
+$second_black: #222222;
+
+$main_blue: #1679b6;
+
+$main_white: #F5F5F5;
+
+// Mixins
+
+@mixin ease-out($time: null){
+    @if($time){
+        transition: all $time ease-out;
+    }
+    @else{
+        transition: all .2s ease-out;
+    }
+}
+
+// Classes
+
+.bg-black{
+
+    background: $main_black;
+    color: $main_white;
+
+}
+
+.bg-black-2{
+
+    background: $second_black;
+    color: $main_white;
+
+}
+
+.btn-blue{
+    display: inline-block;
+    border: 1px solid $main_blue;
+    border-radius: 0;
+    background: $main_blue;
+    color: $main_white;
+    @include ease-out();
+
+    &:hover{
+        background: #1674af;
+    }
+
+    &:focus{
+
+        box-shadow: 0 0 0 .2em rgba($main_blue, .6);
+
+    }
+}
+
+.btn-outline-blue{
+
+    display: inline-block;
+    border: 1px solid $main_blue;
+    border-radius: 0;
+    background: transparent;
+    color: $main_blue;
+    @include ease-out();
+
+    &:hover{
+
+        text-decoration: none;
+        color: $main_white;
+        background: $main_blue;
+
+    }
+
+    &:focus{
+
+        box-shadow: 0 0 0 .2em rgba($main_blue, .6);
+
+    }
+
+}
+
+.btn-outline-white-blue{
+
+    display: inline-block;
+    border: 1px solid $main_white;
+    border-radius: 0;
+    background: transparent;
+    color: $main_white;
+    @include ease-out();
+
+    &:hover{
+        text-decoration: none;
+        border-color: $main_blue;
+        color: $main_white;
+        background: $main_blue;
+
+    }
+
+    &:focus{
+
+        box-shadow: 0 0 0 .2em rgba($main_blue, .6);
+
+    }
+
+}
+
+.border-effect{
+
+    display: inline-block;
+    position: relative;
+
+    &::before{
+
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin: auto;
+        width: 0;
+        height: 2px;
+        background: $main_blue;
+        @include ease-out();
+
+    }
+
+    &::after{
+
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        margin: auto;
+        width: 0;
+        height: 2px;
+        background: $main_blue;
+        @include ease-out();
+
+    }
+
+    &:hover::after, &:hover::before{
+
+        width: 50%;
+    }
+
+    &.active{
+        &::before, &::after{
+            width: 50%;
+        }
+    }
+
+}
+
+.text-blue{
+    color: $main_blue;
+}
+
+.scrollToTop{
+    display: none;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    padding: 1em;
+    background-color: #444;
+    box-shadow: 0 0 1em #AAA;
+    border-radius: .25em;
+    cursor: pointer;
+    color: $main_white;
+    -webkit-transition: transform.2s ease-out;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+
+    &:hover{
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+        background: $main_white;
+        color: $main_black;
+    }
+}
